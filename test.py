@@ -104,45 +104,27 @@ def _get_date():
     return datetime.datetime.now().strftime("%A, %B %d, %Y")
 
 def _print_banner():
+    os.system('clear')
+
     device_info = _get_device_info()
     current_time = _get_time()
     current_date = _get_date()
-    
-    banner_lines = [
-        f"{_c['r']}{_c['B']}",
-        "██╗   ██╗██╗  ████████╗██╗███╗   ███╗ █████╗ ████████╗███████╗",
-        "██║   ██║██║  ╚══██╔══╝██║████╗ ████║██╔══██╗╚══██╔══╝██╔════╝",
-        "██║   ██║██║     ██║   ██║██╔████╔██║███████║   ██║   █████╗  ",
-        "██║   ██║██║     ██║   ██║██║╚██╔╝██║██╔══██║   ██║   ██╔══╝  ",
-        "╚██████╔╝███████╗██║   ██║██║ ╚═╝ ██║██║  ██║   ██║   ███████╗",
-        " ╚═════╝ ╚══════╝╚═╝   ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝",
-        "",
-        "███████╗███╗   ███╗███████╗    ██████╗  ██████╗ ███╗   ███╗██████╗ ███████╗██████╗ ",
-        "██╔════╝████╗ ████║██╔════╝    ██╔══██╗██╔═══██╗████╗ ████║██╔══██╗██╔════╝██╔══██╗",
-        "███████╗██╔████╔██║███████╗    ██████╔╝██║   ██║██╔████╔██║██████╔╝█████╗  ██████╔╝",
-        "╚════██║██║╚██╔╝██║╚════██║    ██╔══██╗██║   ██║██║╚██╔╝██║██╔══██╗██╔══╝  ██╔══██╗",
-        "███████║██║ ╚═╝ ██║███████║    ██████╔╝╚██████╔╝██║ ╚═╝ ██║██████╔╝███████╗██║  ██║",
-        "╚══════╝╚═╝     ╚═╝╚══════╝    ╚═════╝  ╚═════╝ ╚═╝     ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝",
-        f"{_c['e']}{_c['c']}{'=' * 80}",
-        f"{_c['r']}{_c['B']}💀 ULTIMATE SMS BOMBER - ALL 34+ APIs EDITION 💀{_c['c']}",
-        f"{_c['y']}[ ALL 34+ APIs × SLOW & CONTROLLED × 5 REQUESTS EACH ]{_c['c']}",
-        f"{_c['g']}[ ALL 34+ APIs × SLOW CONTROLLED × 5 REQUESTS EACH ]{_c['c']}",
-        f"{_c['p']}[ BTCL + GP + E-COMMERCE + HEALTHCARE + ENTERTAINMENT + GAMING ]{_c['c']}",
-        f"{'=' * 80}",
-        f"\n{_c['g']}[SYSTEM INFO]{_c['e']}",
-        f"{_c['y']}┌─ Date/Time: {_c['w']}{current_date} - {current_time}{_c['e']}",
-        f"{_c['y']}├─ Hostname:  {_c['w']}{device_info['hostname']}{_c['e']}",
-        f"{_c['y']}├─ IP:        {_c['w']}{device_info['ip']}{_c['e']}",
-        f"{_c['y']}└─ System:    {_c['w']}{device_info['system']} {device_info['release']}{_c['e']}",
-        f"\n{_c['c']}{'=' * 80}",
-        f"{_c['g']}CTRL+C: Stop  {_c['y']}CTRL+Z: Pause/Resume{_c['c']}",
-        f"{_c['p']}Created by: {_c['w']}@@8Team/W8SOJIB{_c['c']}",
-        f"{'=' * 80}{_c['e']}"
-    ]
-    
-    for line in banner_lines:
-        print(line)
 
+    print(f"{_c['b']}{'='*50}{_c['e']}")
+    print(f"{_c['c']}        ⚡ S-Bombing ⚡{_c['e']}")
+    print(f"{_c['y']}     by Skyrex | inspired by W8SOJIB{_c['e']}")
+    print(f"{_c['b']}{'='*50}{_c['e']}\n")
+
+    print(f"{_c['g']}[ SYSTEM INFO ]{_c['e']}")
+    print(f"{_c['y']}Time   :{_c['e']} {current_time}")
+    print(f"{_c['y']}Date   :{_c['e']} {current_date}")
+    print(f"{_c['y']}Device :{_c['e']} {device_info['hostname']}")
+    print(f"{_c['y']}IP     :{_c['e']} {device_info['ip']}")
+    print(f"{_c['y']}OS     :{_c['e']} {device_info['system']} {device_info['release']}")
+
+    print(f"\n{_c['b']}{'-'*50}{_c['e']}")
+    print(f"{_c['g']}Controls:{_c['e']} CTRL+C = Stop | CTRL+Z = Pause")
+    print(f"{_c['b']}{'='*50}{_c['e']}\n")
 def _animate_loading(text, duration=2):
     end_time = time.time() + duration
     i = 0
