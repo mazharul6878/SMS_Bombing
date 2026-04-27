@@ -832,11 +832,11 @@ class _ServiceManager:
             async with session.get(csrf_url, ssl=_ssl, timeout=15) as resp:
                 text = await resp.text()
             end = time.time()
-                duration = round(end - start, 2)    
+            duration = round(end - start, 2)    
                 # Extract CSRF token from meta tag
-                import re
-                csrf_match = re.search(r'<meta[^>]*name=["\']csrf-token["\'][^>]*content=["\']([^"\']+)["\']', text)
-                csrf_token = csrf_match.group(1) if csrf_match else "default_token"
+            import re
+            csrf_match = re.search(r'<meta[^>]*name=["\']csrf-token["\'][^>]*content=["\']([^"\']+)["\']', text)
+            csrf_token = csrf_match.group(1) if csrf_match else "default_token"
         except:
             csrf_token = "default_token"
         
