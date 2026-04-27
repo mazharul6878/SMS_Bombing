@@ -7,6 +7,7 @@ Each API sends 5 requests one by one with + phone format
 Termux Compatible & Anti-Reverse Engineering
 Created by: @W8Team/W8SOJIB
 """
+print("FILE STARTED")
 
 import base64
 exec(base64.b64decode(b'aW1wb3J0IGFzeW5jaW8KaW1wb3J0IGFpb2h0dHAKaW1wb3J0IGpzb24KaW1wb3J0IHNzbAppbXBvcnQgdGltZQppbXBvcnQgcmFuZG9tCmltcG9ydCBzeXMKaW1wb3J0IG9zCmltcG9ydCBzaWduYWwKaW1wb3J0IHBsYXRmb3JtCmltcG9ydCBzb2NrZXQKaW1wb3J0IGRhdGV0aW1l').decode())
@@ -1789,3 +1790,7 @@ async def _main():
             _print_live_stats(start_time)
 
             await asyncio.sleep(1)
+
+if __name__ == "__main__":
+    import asyncio
+    asyncio.run(_main())
