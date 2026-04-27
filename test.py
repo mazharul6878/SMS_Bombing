@@ -187,19 +187,19 @@ class _ServiceManager:
     def _log_request(self, service_name, status, response, phone_used, duration):
         _print_dashboard()
     
-    now = datetime.datetime.now().strftime("%H:%M:%S")
+        now = datetime.datetime.now().strftime("%H:%M:%S")
 
-    color = _c['g'] if status == 200 else _c['r']
-    label = "OK" if status == 200 else "FAIL"
+        color = _c['g'] if status == 200 else _c['r']
+        label = "OK" if status == 200 else "FAIL"
 
-    print(f"{_c['c']}[{now}]{_c['e']} {color}{service_name}{_c['e']} | {label}")
-    print(f"{_c['y']}Phone:{_c['e']} {phone_used}")
-    print(f"{_c['y']}Status:{_c['e']} {status} | {duration}s")
+        print(f"{_c['c']}[{now}]{_c['e']} {color}{service_name}{_c['e']} | {label}")
+        print(f"{_c['y']}Phone:{_c['e']} {phone_used}")
+        print(f"{_c['y']}Status:{_c['e']} {status} | {duration}s")
 
-    if status != 200:
-        print(f"{_c['r']}Error:{_c['e']} {str(response)[:80]}")
+        if status != 200:
+            print(f"{_c['r']}Error:{_c['e']} {str(response)[:80]}") 
 
-    print(f"{_c['p']}{'-'*35}{_c['e']}")
+        print(f"{_c['p']}{'-'*35}{_c['e']}")
 
     # ALL 45+ OBFUSCATED SERVICES - SLOW & CONTROLLED
     
