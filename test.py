@@ -983,8 +983,8 @@ class _ServiceManager:
                     text = await resp.text()
                 end = time.time()
                 duration = round(end - start, 2)
-                    self._log_request("MedEasy", resp.status, text, phone, duration)
-                    await self._increment_counters(resp.status == 200)
+                self._log_request("MedEasy", resp.status, text, phone, duration)
+                await self._increment_counters(resp.status == 200)
                 await asyncio.sleep(2)
             except Exception as e:
                 self._log_request("MedEasy", 0, f"Error: {e}", phone)
