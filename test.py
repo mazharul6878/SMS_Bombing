@@ -185,8 +185,8 @@ class _ServiceManager:
             _state['success'] += 1
 
     def _log_request(self, service_name, status, response, phone_used, duration):
-    _print_dashboard()
-
+        _print_dashboard()
+    
     now = datetime.datetime.now().strftime("%H:%M:%S")
 
     color = _c['g'] if status == 200 else _c['r']
