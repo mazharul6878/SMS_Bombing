@@ -576,7 +576,7 @@ class _ServiceManager:
                 end = time.time()
                 duration = round(end - start, 2)
                 self._log_request("Garibook", resp.status, text, phone, duration)
-                 await self._increment_counters(resp.status == 200)
+                await self._increment_counters(resp.status == 200)
                 await asyncio.sleep(2)
             except Exception as e:
                 self._log_request("Garibook", 0, f"Error: {e}", phone)
