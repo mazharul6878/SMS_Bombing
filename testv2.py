@@ -1726,6 +1726,14 @@ class _ServiceManager:
         else:
             await self._run_all_services_slowly()
 
+def _show_menu():
+    print("\n========== MENU ==========")
+    print("1. Start")
+    print("2. Pause/Resume")
+    print("3. Exit")
+
+    return input("Select option: ").strip()
+
 async def _main():
     _clear_screen()
     _print_banner()
