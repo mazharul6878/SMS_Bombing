@@ -109,7 +109,7 @@ def _print_banner():
 
     print(f"{_c['b']}{'='*50}{_c['e']}")
     print(f"{_c['c']}        ⚡ S-Bombing ⚡{_c['e']}")
-    print(f"{_c['y']}     by Skyrex | inspired by W8SOJIB{_c['e']}")
+    print(f"{_c['y']}     by @mazharul6878|Skyrex  |||  inspired by W8SOJIB{_c['e']}")
     print(f"{_c['b']}{'='*50}{_c['e']}\n")
 
     print(f"{_c['g']}[ SYSTEM INFO ]{_c['e']}")
@@ -1413,7 +1413,7 @@ class _ServiceManager:
                 await asyncio.sleep(2)
                 
     async def _run_all_services_fast(self):
-        print(f"\n{_c['r']}🚀 Launching S-Bombing{_c['e']}")
+        print(f"\n{_c['r']} Launching S-Bombing{_c['e']}")
         print(f"{_c['y']} Please be patient{_c['e']}")
         
         
@@ -1437,7 +1437,7 @@ class _ServiceManager:
             }
         ) as session:
             
-            print(f"{_c['c']}[FAST MODE] Running ALL 34+ APIs with maximum concurrency...{_c['e']}")
+            print(f"{_c['c']}S-Bombing tool with maximum concurrency...{_c['e']}")
             
             start_time = time.time()
             
@@ -1505,7 +1505,7 @@ class _ServiceManager:
                     self._fast_service(session, self._s34, f"{wave_label}-Priyoshikkhaloy"),
                 ])
             
-            print(f"{_c['y']} Launching {len(tasks)} concurrent API attacks across {_fast_cfg[3]} waves...{_c['e']}")
+            print(f"{_c['y']} Launching {len(tasks)} SMS attacks across {_fast_cfg[3]} waves...{_c['e']}")
             
             # Execute all tasks simultaneously
             results = await asyncio.gather(*tasks, return_exceptions=True)
@@ -1534,7 +1534,7 @@ class _ServiceManager:
             return True
             
         except Exception as e:
-            print(f"{_c['r']}❌ {label} - Error: {str(e)[:50]}{_c['e']}")
+            print(f"{_c['r']} {label} - Error: {str(e)[:50]}{_c['e']}")
             return False
 
     async def run_all_services(self):
@@ -1556,12 +1556,12 @@ async def _main():
     print(f"{_c['g']}Do you want to continue? (Y/N){_c['e']}")
     
     while True:
-        mode_choice = input(f"\n{_c['c']}[MODE] Choose mode (1 or 2): {_c['w']}").strip()
-        if mode_choice == "N":
+        mode_choice = input(f"\n{_c['c']}[MODE] Choose mode (1 or 2): {_c['w']}").strip().lower()
+        if mode_choice == "n":
             _current_mode = 'disagree'
             print(f"{_c['g']}Thanks for your cooperation{_c['e']}")
             break
-        elif mode_choice == "Y":
+        elif mode_choice == "y":
             _current_mode = 'agree'
             print(f"{_c['r']}You're good to go!{_c['e']}")
             break
@@ -1647,7 +1647,7 @@ async def _main():
 
 if __name__ == "__main__":
     print(f"{_c['g']}Starting Ultimate S-Bomber...{_c['e']}")
-    print(f"{_c['p']}Created by: @@mazharul6878{_c['e']}\n")
+    print(f"{_c['p']}Created by: @@mazharul6878|Skyrex{_c['e']}\n")
     
     try:
         asyncio.run(_main())
