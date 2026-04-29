@@ -29,10 +29,11 @@ pkg install git -y
 pkg install python python-pip -y
 
 pip install aiohttp
+pip install urllib3
 
 git clone https://github.com/mazharul6878/SMS_Bombing
-cd SMS_Bombing
 
+cd SMS_Bombing
 python s_bomb.py
 ```
 
