@@ -13,9 +13,9 @@ Signal Handling - Proper CTRL+C and CTRL+Z support
 Async Performance - Lightning-fast concurrent requests
 Anti-Detection - Dynamic cookies and headers
 
-###Installation
+##Installation
 
-#Termux:
+Termux:
 
 ```bash
 pkg update && pkg upgrade
