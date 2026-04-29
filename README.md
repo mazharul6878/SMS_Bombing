@@ -1,45 +1,96 @@
-# S-BOMBING 
+# ⚡ S-BOMBING
 
-One of the most powerful SMS bombing tool!
+> One of the most powerful SMS bombing tools
 
-Created by SKYREX--- @mazharul6878
+**Created by:** SKYREX — [@mazharul6878](https://github.com/mazharul6878)
 
-## Features
-- Optimized for android - Turmax
-- Infinite Loop Mode - Never stops until you say so
-- Hacker Interface - Beautiful terminal animations and colors
-- Real-time Statistics - Track success rates and total requests
-- Signal Handling - Proper 'CTRL+C' and 'CTRL+Z' support
-- Async Performance - Lightning-fast concurrent requests
-- Anti-Detection - Dynamic cookies and headers
+---
 
-# Installation
+## 🚀 Features
 
-## Termux:
+- 📱 Optimized for Android (Termux)
+- 🔁 Infinite Loop Mode — runs continuously until stopped
+- 🧑‍💻 Hacker-style Interface — terminal animations & colored output
+- 📊 Real-time Statistics — track success rate & total requests
+- ⛔ Signal Handling — supports `CTRL+C` and `CTRL+Z`
+- ⚡ Async Performance — fast concurrent execution
+- 🛡️ Anti-Detection — dynamic headers & cookies
+
+---
+
+## 📦 Installation
+
+### 📱 Termux (Android)
 
 ```bash
-pkg update && pkg upgrade
+pkg update && pkg upgrade -y
+
 pkg install git -y
-pkg install python python-pip git
+pkg install python python-pip -y
+
 pip install aiohttp
+
 git clone https://github.com/mazharul6878/SMS_Bombing
 cd SMS_Bombing
+
 python s_bomb.py
+```
 
+---
 
-# Legal Disclaimer
-## FOR EDUCATIONAL PURPOSES ONLY!
+## ⚙️ Usage
 
-This tool is created for:
+1. Run the script:
+   ```bash
+   python s_bomb.py
+   ```
 
-Security research and testing
-Educational purposes
-Testing your own phone numbers
-Demonstrating SMS vulnerabilities
-DO NOT USE FOR:
+2. Follow on-screen instructions  
 
-Harassment or spam
-Illegal activities
-Attacking others without permission
-Commercial purposes
-The creator is not responsible for misuse of this tool.
+3. Controls:
+   - `CTRL+C` → Stop  
+   - `CTRL+Z` → Pause/Resume  
+
+---
+
+## ⚠️ Legal Disclaimer
+
+### ❗ FOR EDUCATIONAL PURPOSES ONLY
+
+This tool is created strictly for:
+
+- Security research & controlled testing  
+- Educational learning purposes  
+- Testing on your **own phone numbers only**  
+- Demonstrating system-level SMS vulnerabilities  
+
+---
+
+### 🚫 STRICTLY PROHIBITED
+
+- Harassment, spamming, or abuse  
+- Targeting individuals without explicit consent  
+- Any illegal activity  
+- Commercial misuse  
+
+---
+
+> ⚠️ **DISCLAIMER:**  
+> The creator assumes **no responsibility or liability** for any misuse, damage, or legal consequences caused by this tool.  
+> By using this tool, you agree to use it responsibly and within legal boundaries.
+
+---
+
+## 👨‍💻 Credits
+
+**Created by:**  
+- SKYREX — [@mazharul6878](https://github.com/mazharul6878)
+
+**Special Thanks:**  
+- @W8Team/W8SOJIB  
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
