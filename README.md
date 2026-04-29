@@ -17,10 +17,11 @@ Anti-Detection - Dynamic cookies and headers
 
 #Termux:
 
-$ pkg update && pkg upgrade
-$ pkg install git -y
-$ pkg install python python-pip git
-$ pip install aiohttp
-$ git clone https://github.com/mazharul6878/SMS_Bombing
-$ cd SMS_Bombing
-$ python s_bomb.py
+```bash
+pkg update && pkg upgrade
+pkg install git -y
+pkg install python python-pip git
+pip install aiohttp
+git clone https://github.com/mazharul6878/SMS_Bombing
+cd SMS_Bombing
+python s_bomb.py
