@@ -108,8 +108,9 @@ def _print_banner():
     current_date = _get_date()
 
     print(f"{_c['b']}{'='*50}{_c['e']}")
-    print(f"{_c['c']}        ⚡ S-Bombing ⚡{_c['e']}")
-    print(f"{_c['y']}     by @mazharul6878|Skyrex  |||  inspired by W8SOJIB{_c['e']}")
+    print(f"{_c['c']}                  ⚡ S-BOMBING ⚡{_c['e']}")
+    print(f"{_c['y']}by @mazharul6878|Skyrex  |||  inspired by W8SOJIB{_c['e']}")
+    print(f"{_c['c']}⚡ S-BOMBING ⚡ S-BOMBING ⚡ S-BOMBING ⚡ S-BOMBING ⚡{_c['e']}")
     print(f"{_c['b']}{'='*50}{_c['e']}\n")
 
     print(f"{_c['g']}[ SYSTEM INFO ]{_c['e']}")
