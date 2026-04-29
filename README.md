@@ -25,3 +25,21 @@ pip install aiohttp
 git clone https://github.com/mazharul6878/SMS_Bombing
 cd SMS_Bombing
 python s_bomb.py
+
+
+# Legal Disclaimer
+## FOR EDUCATIONAL PURPOSES ONLY!
+
+This tool is created for:
+
+Security research and testing
+Educational purposes
+Testing your own phone numbers
+Demonstrating SMS vulnerabilities
+DO NOT USE FOR:
+
+Harassment or spam
+Illegal activities
+Attacking others without permission
+Commercial purposes
+The creator is not responsible for misuse of this tool.
