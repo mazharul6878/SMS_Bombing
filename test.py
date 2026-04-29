@@ -113,11 +113,12 @@ def _print_banner():
     print(f"{_c['b']}{'='*50}{_c['e']}\n")
 
     print(f"{_c['g']}[ SYSTEM INFO ]{_c['e']}")
-    print(f"{_c['y']}Time   :{_c['e']} {current_time}")
-    print(f"{_c['y']}Date   :{_c['e']} {current_date}")
-    print(f"{_c['y']}Device :{_c['e']} {device_info['hostname']}")
-    print(f"{_c['y']}IP     :{_c['e']} {device_info['ip']}")
-    print(f"{_c['y']}OS     :{_c['e']} {device_info['system']} {device_info['release']}")
+    print(f"{_c['y']}Time       :{_c['e']} {current_time}")
+    print(f"{_c['y']}Date       :{_c['e']} {current_date}")
+    print(f"{_c['y']}Device     :{_c['e']} {device_info['hostname']}")
+    print(f"{_c['y']}IP         :{_c['e']} {device_info['ip']}")
+    print(f"{_c['y']}OS         :{_c['e']} {device_info['system']} {device_info['release']}")
+    print(f"{_c['y']}Pulished by: @mazharul6878|Skyrex {_c['e']}")
 
     print(f"\n{_c['b']}{'-'*50}{_c['e']}")
     print(f"{_c['g']}Controls:{_c['e']} CTRL+C = Stop | CTRL+Z = Pause")
@@ -1552,18 +1553,18 @@ async def _main():
 
     
     # Mode selection
-    print(f"\n{_c['y']} This tool is only for educational purposes. We're not responsible for any illigal activities.{_c['e']}")
-    print(f"{_c['g']}Do you want to continue? (Y/N){_c['e']}")
+    print(f"\n{_c['y']}*NOTE: This tool is only for educational purposes. We're not responsible for any illigal activities.{_c['e']}")
+    
     
     while True:
-        mode_choice = input(f"\n{_c['c']}[MODE] Choose mode (1 or 2): {_c['w']}").strip().lower()
+        mode_choice = input(f"\n{_c['c']}Do you want to continue? (Y/N): {_c['w']}").strip().lower()
         if mode_choice == "n":
             _current_mode = 'disagree'
             print(f"{_c['g']}Thanks for your cooperation{_c['e']}")
             break
         elif mode_choice == "y":
             _current_mode = 'agree'
-            print(f"{_c['r']}You're good to go!{_c['e']}")
+            print(f"{_c['r']} Hurrah! You're good to go!{_c['e']}")
             break
         else:
             print(f"{_c['r']} Invalid choice! Please enter Y or N.{_c['e']}")
@@ -1572,13 +1573,13 @@ async def _main():
         phone_input = input(f"\n{_c['g']} Targeted number [With Country Code] : {_c['w']}").strip()
         if phone_input and len(phone_input) >= 10:
             break
-        print(f"{_c['r']}[ERROR] Enter a valid number, this tool currently support only Bangladeshi numbers.{_c['e']}")
+        print(f"{_c['r']}[ERROR] Enter a valid number (this tool currently support only Bangladeshi numbers.){_c['e']}")
     
     phone_data = _format_phone_number(phone_input)
-    print(f"{_c['c']}[INFO] Target: {_c['y']}{phone_data['with_0']}{_c['e']}")
+    print(f"{_c['c']}Targeted Number: {_c['y']}{phone_data['with_0']}{_c['e']}")
     
     if _current_mode == 'agree':
-        print(f"\n{_c['r']} Your attack is activated. {_c['e']}")
+        print(f"\n{_c['r']} Your attack is confirmed. {_c['e']}")
         print(f"{_c['r']} This will continuously send SMS to target number until you enter CTRL+C!{_c['e']}")
         
     else:
